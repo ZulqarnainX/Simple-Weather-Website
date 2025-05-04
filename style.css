@@ -1,0 +1,167 @@
+/* Importing Fonts :  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html, body {
+  height: 100%;
+  overflow: hidden;  /* Prevent scroll bar */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("https://media.istockphoto.com/id/1138440263/photo/graduated-blue-summer-sky-genuine-photograph.jpg?s=612x612&w=0&k=20&c=3ZfuXlcBMjpjuYnxdy09lJiL1XMdbW5e8lTaw1cxin0=");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+  transition: all 2s ease-in-out;
+}
+
+.container {
+  display: flex;
+  padding-top: 34px;
+  justify-content: center;
+}
+.searchbar {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.searchbar input {
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+  height: 60px;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  cursor: pointer;
+  border: 1px solid black;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.searchbar input[type="text"]::placeholder {
+  color: #707070;
+}
+
+.searchbar input[type="text"]:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.city {
+  text-align: center;
+}
+
+.city p {
+  font-size: x-large;
+}
+
+.cent {
+  text-align: center;
+
+  font-size: xx-large;
+}
+
+.ce {
+  text-align: center;
+}
+
+.city h1 {
+  color: rgb(245, 252, 255);
+}
+
+.ce p {
+  font-size: x-large;
+}
+
+.search-btn {
+  background-color: #4caf50;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #cf460f; /* Darker green on hover */
+}
+
+.search-btn:active {
+  transform: scale(0.98); /* Slight shrink on click */
+}
+
+.card {
+  
+  width: 25vw;
+  height: 75vh;
+  border-radius: 50px;
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+hr.rounded {
+  border-top: 8px solid #4949495b;
+  width: 45px;
+  border-radius: 10px;
+}
+
+.city p {
+  font-size: 18px;
+  color: gray;
+}
+
+.cent {
+  color: rgb(117, 230, 211);
+  text-shadow: 
+    1px 1px 2px rgba(0, 0, 0, 0.6),  /* soft main shadow */
+    2px 2px 4px rgba(0, 0, 0, 0.4); /* deeper layered shadow */
+}
+
+.ce {
+  align-items: center;
+  
+}
+
+.ce h1 {
+  color: rgb(52, 237, 243);
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+  text-shadow: 
+    1px 1px 2px rgba(0, 0, 0, 0.6),  /* soft main shadow */
+    2px 2px 4px rgba(0, 0, 0, 0.4); /* deeper layered shadow */
+}
+
+.ce p{
+  color: #000000;
+}
+
+
+
+.humidity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wind {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

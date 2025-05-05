@@ -165,3 +165,54 @@ hr.rounded {
   align-items: center;
 }
 
+
+/* Responsive */
+
+@media only screen and (max-width: 1000px){
+  .container{
+
+    align-items: center;
+  }
+  
+  .card {
+    width: 32vw;
+  }
+   
+}
+@media only screen and (max-width: 750px){
+  .card {
+    width: 50vw;
+  }
+  .container{
+    align-items: center;
+  }
+  #tempp{
+    font-size: 45px;
+  }
+   
+}
+@media only screen and (max-width: 500px){
+  .card {
+    width: 70vw;
+  }
+  .container{
+    align-items: center;
+  }
+  #tempp{
+    font-size: 40px;
+  }
+   
+}
+@media only screen and (max-width: 350px){
+  .card {
+    width: 93vw;
+  }
+  .container{
+    align-items: center;
+  }
+
+  #tempp{
+    font-size: 35px;
+  }
+   
+}

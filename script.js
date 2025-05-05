@@ -50,12 +50,7 @@ function getWeather() {
         .querySelectorAll("hr:not(.rounded)")
         .forEach((hr) => hr.remove());
 
-      if (data.weather[0].main === "Clear") {
-        document.body.style.backgroundImage = "url('assets/sunny_bg.png')";
-        card.style.backgroundImage = "url('assets/sunny.jpg')";
-        card.style.boxShadow =
-          "0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 123, 255, 0.5), inset 0 0 15px rgba(0, 123, 255, 0.3)";
-      } else if (data.weather[0].main === "Rain") {
+      if (data.weather[0].main === "Rain") {
         document.body.style.backgroundImage = "url('assets/rainy_bg.png')";
         document.body.style.width = "100vw";
         document.body.style.height = "100vh";
@@ -151,6 +146,12 @@ function getWeather() {
         // document.querySelector(".card").style.border = '1px solid black'
         document.getElementById("tempp").style.color = "#dddddd";
         document.getElementById("status").style.color = "#dddddd";
+      }
+      else{
+        document.body.style.backgroundImage = "url('assets/sunny_bg.png')";
+        card.style.backgroundImage = "url('assets/sunny.jpg')";
+        card.style.boxShadow =
+          "0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 123, 255, 0.5), inset 0 0 15px rgba(0, 123, 255, 0.3)";
       }
     })
     .catch((error) => {

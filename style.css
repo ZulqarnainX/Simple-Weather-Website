@@ -168,9 +168,46 @@ hr.rounded {
 
 /* Responsive */
 
+/* For 1024x768 */
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (max-height: 768px) {
+  .card {
+    height: 93vh;
+  }
+  .searchbar {
+    margin-top: -35px;
+  }
+
+  .card {
+    width: 38vw;
+  }
+}
+
+/* For 1280x720 */
+@media only screen and (min-width: 1280px) and (max-width: 1280px) and (max-height: 720px) {
+  .card {
+    height: 95vh;
+    width: 35vw;
+  }
+
+  .searchbar {
+    margin-top: -35px;
+  }
+
+  .wind p{
+    font-size: 15px;
+  }
+
+  .humidity p{
+    font-size: 15px;
+  }
+
+  
+
+}
+
 @media only screen and (max-width: 1000px){
   .container{
-
+    height: 100vh;
     align-items: center;
   }
   
